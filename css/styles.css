@@ -1,130 +1,170 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('/fonts/rubik.ttf') format('truetype');
+    font-weight: 1 999;
+}
 
-html
-{
+
+html {
     font-family: 'Rubik', sans-serif;
     background: #070717;
-    color:#fff;
-    user-select:none;
-    height:100%;
+    color: #fff;
+    user-select: none;
+    height: 100%;
 }
-body
-{
-    
-    margin:0px;
-    height:100%;
+/*
+
+MEDIA ASUHFUIKWERGHBVUOSWREGHUORW GHUOIWRHGUOLW4
+
+
+*/
+
+
+@media (max-width: 768px) {
+    .woop {
+        transform: rotate(90deg);
+
+    }
+
+    nav {
+        display: table-row !important;
+    }
+
 }
 
-.navlink
-{
+/* 
+
+all oethere
+
+*/
+
+
+body {
+
+    margin: 0px;
+    height: 100%;
+}
+
+.navlink {
     text-decoration: none;
     margin: 20px;
 }
-
-
-
-hero > h1
+.hamburgerBTN
 {
-    font-size: 120px;
-    color:#fff;
+    font-weight: 500;
+    color: white;
 }
 
-nav
-{
-    background:#101036;
-    position:fixed;
-    top:0;
-    left:0;
-    min-height:50px;
-    width:100%;
-    color:#fff;
+
+
+hero>h1 {
+    font-size: 120px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+nav {
+    background: #101036;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 50px;
+    width: 100%;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 4;
+    white-space: nowrap;
 
 }
 
 
-nav-item
-{
-    height:100%;
-    color:#fff;
+nav-item {
+    height: 100%;
+    color: #fff;
     display: flex;
     padding: 20px;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s cubic-bezier(0,.95,.26,1);
+    transition: all 0.5s cubic-bezier(0, .95, .26, 1);
 
 }
 
-nav-item:hover
-{
+nav-item:hover {
     background-color: aliceblue;
-    color:#070717;
-    padding:20px 60px;
+    color: #070717;
+    padding: 20px 60px;
     border-radius: 5px;
     font-weight: 900;
 
 }
 
 
-hero-container
-{
-    background:  rgb(9, 0, 58);
+hero-container {
+    background: rgb(9, 0, 58);
     background: linear-gradient(338deg, rgb(9, 0, 58) 0%, rgb(40, 16, 107) 100%);
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    color:#fff;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-hero
-{
 
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
+
+hero>h1 {
+    font-size: 80px;
+    color: #fff;
+}
+
+hero {
+
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     display: inline-flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     background: rgba(4, 2, 19, 0);
-    transition: all 1.5s cubic-bezier(0,.95,.26,1);
+    transition: all 1.5s cubic-bezier(0, .95, .26, 1);
 
-}h2
-{
+}
+
+h2 {
     font-size: 4rem;
 }
-.woop
-{
-    margin:10px;
-    transition: all .5s cubic-bezier(1,0,.6,1);
-}
-.woop:hover
-{
 
-    letter-spacing:2rem;
-    transition: letter-spacing 2s cubic-bezier(0,.95,.26,1);
+.woop {
+    margin: 10px;
+    transition: all .5s cubic-bezier(1, 0, .6, 1);
 }
-hero-container
-{
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    color:#fff;
+
+.woop:hover {
+
+    letter-spacing: 2rem;
+    transition: letter-spacing 0.5s cubic-bezier(0, .95, .26, 1), font-weight 2s cubic-bezier(0, .95, .26, 1);
+    font-weight: 100;
+}
+
+hero-container {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff;
     position: absolute;
     z-index: 1;
 }
-spacefix
-{
-    width:100%;
-    height:100%;
+
+spacefix {
+    width: 100%;
+    height: 100%;
     display: inline-block;
 }
