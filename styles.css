@@ -26,6 +26,7 @@ body
 hero > h1
 {
     font-size: 120px;
+    color:#fff;
 }
 
 nav
@@ -79,6 +80,7 @@ hero-container
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s cubic-bezier(0,.95,.26,1);
 
 }
 
@@ -89,7 +91,6 @@ hero
     left:0;
     height:100%;
     width:100%;
-    color:#fff;
     display: inline-flex;
     justify-content: center;
     text-align: center;
