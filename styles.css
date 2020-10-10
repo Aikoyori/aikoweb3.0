@@ -80,7 +80,6 @@ hero-container
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s cubic-bezier(0,.95,.26,1);
 
 }
 
