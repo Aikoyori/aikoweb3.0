@@ -28,7 +28,7 @@ MEDIA ASUHFUIKWERGHBVUOSWREGHUORW GHUOIWRHGUOLW4
 
     nav-list {
         display: table-row !important;
-        transform: translateY(-200px);
+        transform: translateY(-100px);
         transition: all 0.5s cubic-bezier(0, .95, .26, 1);
         width:100%;
     }
@@ -43,6 +43,12 @@ MEDIA ASUHFUIKWERGHBVUOSWREGHUORW GHUOIWRHGUOLW4
     nav.active {
         transform: translateY(0px);
     }
+    
+    hero>h1 {
+        font-size: 80px;
+        white-space: nowrap;
+        color: #fff;
+    }
 }
 
 @media (min-width: 768px) {
@@ -50,6 +56,13 @@ MEDIA ASUHFUIKWERGHBVUOSWREGHUORW GHUOIWRHGUOLW4
     .hamburgerBTN
     {
         display: none !important;
+    }
+    
+
+    hero>h1 {
+        font-size: 120px;
+        color: #fff;
+        white-space: nowrap;
     }
 }
 
@@ -95,34 +108,30 @@ body {
 
 .hamburgerBTN.active
 {
-    transform: rotate(225deg);
+    transform: rotate(405deg);
     font-size: 1.5rem;
     font-weight: 500;
-    transition: all 0.5s cubic-bezier(0, .95, .26, 1);
+    transition: all 0.75s cubic-bezier(0, .95, .26, 1);
 }
 
 
-
-hero>h1 {
-    font-size: 120px;
-    color: #fff;
-    white-space: nowrap;
-}
 
 nav {
-    background: #101036;
+    background: #1506414d;
     position: fixed;
     top: 0;
     left: 0;
     min-height: 50px;
-    width: 100%;
+    width: calc(100% - 20px);
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 4;
     white-space: nowrap;
-    box-shadow: 0px 2px 20px -4px #000;
+    margin:10px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
 
 }
 nav-list {
@@ -157,8 +166,11 @@ nav-item:hover {
 
 
 hero-container {
-    background: rgb(9, 0, 58);
-    background: linear-gradient(338deg, rgb(9, 0, 58) 0%, rgb(40, 16, 107) 100%);
+    background: rgb(179,31,165);
+    background: linear-gradient(338deg, rgba(179,31,165,1) 0%, rgba(5,159,204,1) 100%);
+    background-size: cover;
+    background-position: center;
+    /*background: linear-gradient(338deg, rgb(11, 4, 51) 0%, rgb(44, 13, 131) 100%);*/
     top: 0;
     left: 0;
     height: 100%;
@@ -172,10 +184,6 @@ hero-container {
 
 
 
-hero>h1 {
-    font-size: 80px;
-    color: #fff;
-}
 
 hero {
 
@@ -203,9 +211,9 @@ h2 {
 
 .woop:hover {
 
-    letter-spacing: 2rem;
+    letter-spacing: 1rem;
     transition: letter-spacing 0.5s cubic-bezier(0, .95, .26, 1), font-weight 2s cubic-bezier(0, .95, .26, 1);
-    font-weight: 100;
+    font-weight: 400;
 }
 
 hero-container {
