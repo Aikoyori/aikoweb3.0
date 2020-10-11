@@ -30,13 +30,14 @@ MEDIA ASUHFUIKWERGHBVUOSWREGHUORW GHUOIWRHGUOLW4
         display: table-row !important;
         transform: translateY(-200px);
         transition: all 0.5s cubic-bezier(0, .95, .26, 1);
+        width:100%;
     }
     nav-list.active {
         display: table-row !important;
         transform: translateY(0px);
     }
     nav {
-        transform: translateY(-260px);
+        transform: translateY(-320px);
         transition: all 0.5s cubic-bezier(0, .95, .26, 1);
     }
     nav.active {
