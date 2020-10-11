@@ -1,1 +1,52 @@
-<script>window.location="/"</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="Aikoyori • ABOUT ME">
+    <meta property="og:site_name" content="Aikoyori's Website">
+    <meta property="og:url" content="https://aikoyori.xyz/about.html">
+    <meta property="og:description"
+        content="Who am I? I have no idea actually.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/jigsaw.png">
+    <title>Aikoyori • ABOUT ME</title>
+</head>
+
+<body>
+    <div id="hamburg" draggable="false" class="navlink hamburgerBTN" href="#">+</div>
+    <nav id="navbar">
+        <nav-list class="list" id="navlist">
+            <a draggable="false" class="navlink" href="/">
+                <nav-item>&lsaquo; HOME / &rsaquo;</nav-item>
+            </a>
+            <a draggable="false" class="navlink current" href="/about.html">
+                <nav-item>&lsaquo; ABOUT-ME / &rsaquo;</nav-item>
+            </a>
+            <a draggable="false" class="navlink" href="/portfolio.html">
+                <nav-item>&lsaquo; STUFF-THAT-I-MAKE / &rsaquo;</nav-item>
+            </a>
+            <a draggable="false" class="navlink" href="/contacts.html">
+                <nav-item>&lsaquo; CONTACTS / &rsaquo;</nav-item>
+            </a>
+        </nav-list>
+    </nav>
+    <hero-container>
+    </hero-container>
+    <div class="container">
+
+        <h1>Who is Aikoyori?</h1>
+        Hello! I am Aikoyori. I like Minecraft and coding and making After Effects ahd making YouTube Videos. Also you know this isn't done right?
+    </div>
+</body>
+<script>
+    document.getElementById("hamburg").addEventListener("click", () => {
+        document.getElementById("navlist").classList.toggle("active");
+        document.getElementById("navbar").classList.toggle("active");
+        document.getElementById("hamburg").classList.toggle("active");
+    })
+</script>
+
+</html>
