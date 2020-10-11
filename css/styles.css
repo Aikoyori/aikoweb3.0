@@ -20,16 +20,36 @@ MEDIA ASUHFUIKWERGHBVUOSWREGHUORW GHUOIWRHGUOLW4
 */
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .woop {
         transform: rotate(90deg);
 
     }
 
-    nav {
+    nav-list {
         display: table-row !important;
+        transform: translateY(-200px);
+        transition: all 0.5s cubic-bezier(0, .95, .26, 1);
     }
+    nav-list.active {
+        display: table-row !important;
+        transform: translateY(0px);
+    }
+    nav {
+        transform: translateY(-260px);
+        transition: all 0.5s cubic-bezier(0, .95, .26, 1);
+    }
+    nav.active {
+        transform: translateY(0px);
+    }
+}
 
+@media (min-width: 768px) {
+
+    .hamburgerBTN
+    {
+        display: none !important;
+    }
 }
 
 /* 
@@ -49,10 +69,35 @@ body {
     text-decoration: none;
     margin: 20px;
 }
+
 .hamburgerBTN
 {
-    font-weight: 500;
+    position: fixed;
+    font-weight: 100;
+    height:48px;
+    width:48px;
+    top:0px;
+    right:0px;
+    font-size: 1.5rem;
+    padding:10px;
+    height:20px;
+    width:20px;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+    white-space: nowrap;
+    transition: all 0.5s cubic-bezier(0, .95, .26, 1);
+}
+
+
+.hamburgerBTN.active
+{
+    transform: rotate(225deg);
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: all 0.5s cubic-bezier(0, .95, .26, 1);
 }
 
 
@@ -71,6 +116,15 @@ nav {
     min-height: 50px;
     width: 100%;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    white-space: nowrap;
+    box-shadow: 0px 2px 20px -4px #000;
+
+}
+nav-list {
     display: flex;
     justify-content: center;
     align-items: center;

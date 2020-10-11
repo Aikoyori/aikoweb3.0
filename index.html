@@ -7,12 +7,14 @@
     <title>Aikoyori • HOME</title>
 </head>
 <body>
+    <a id="hamburg" draggable="false" class="navlink hamburgerBTN" href="#">+</a>
     <nav id="navbar">
-        <a draggable="false" class="navlink" href="/"><nav-item>&lsaquo; HOME / &rsaquo;</nav-item></a>
-        <a draggable="false" class="navlink" href="/about.html"><nav-item>&lsaquo; ABOUT-ME / &rsaquo;</nav-item></a>
-        <a draggable="false" class="navlink" href="/contacts.html"><nav-item>&lsaquo; STUFF-THAT-I-MAKE / &rsaquo;</nav-item></a>
-        <a draggable="false" class="navlink" href="/contacts.html"><nav-item>&lsaquo; CONTACTS / &rsaquo;</nav-item></a>
-        <a draggable="false" class="navlink hamburgerBTN" href="#">+</a>
+        <nav-list class="list" id="navlist">
+            <a draggable="false" class="navlink" href="/"><nav-item>&lsaquo; HOME / &rsaquo;</nav-item></a>
+            <a draggable="false" class="navlink" href="/about.html"><nav-item>&lsaquo; ABOUT-ME / &rsaquo;</nav-item></a>
+            <a draggable="false" class="navlink" href="/contacts.html"><nav-item>&lsaquo; STUFF-THAT-I-MAKE / &rsaquo;</nav-item></a>
+            <a draggable="false" class="navlink" href="/contacts.html"><nav-item>&lsaquo; CONTACTS / &rsaquo;</nav-item></a>
+        </nav-list>
     </nav>
     <hero-container>
         <hero>
@@ -21,4 +23,11 @@
     </hero-container>
     <spacefix></spacefix>
 </body>
+<script>
+    document.getElementById("hamburg").addEventListener("click",()=>{
+        document.getElementById("navlist").classList.toggle("active");
+        document.getElementById("navbar").classList.toggle("active");
+        document.getElementById("hamburg").classList.toggle("active");
+    })
+</script>
 </html>
