@@ -11,6 +11,7 @@ html {
     color: #fff;
     user-select: none;
     height: 100%;
+    width: 100%;
 }
 /*
 
@@ -28,13 +29,14 @@ MEDIA ASUHFUIKWERGHBVUOSWREGHUORW GHUOIWRHGUOLW4
 
     nav-list {
         display: table-row !important;
-        transition: all 0.75s cubic-bezier(0, .95, .26, 1);
-        width:100%;
+        /*transform: translateX(calc(-50vw + 80px));*/
+        transition: all 1s cubic-bezier(.7,.04,.62,.95);
     }
     nav-list.active {
         display: table-row !important;
         transform: translateY(0px);
         
+        transition: all 1s cubic-bezier(.17,.67,.27,.94);
     }
     nav-list > a:not(.current) {
         display: none;
@@ -44,7 +46,6 @@ MEDIA ASUHFUIKWERGHBVUOSWREGHUORW GHUOIWRHGUOLW4
     }
     nav-list.active > a:not(.current) {
         display: inline;
-        opacity: 1;
         color:rgba(255, 255, 255, 1);
         
     }
@@ -87,7 +88,8 @@ all oethere
 
 
 body {
-
+    height:calc(100% - 160px);
+    width:100%;
     margin: 0px;
 }
 
@@ -123,15 +125,17 @@ body {
     transform: rotate(405deg);
     font-size: 1.5rem;
     font-weight: 500;
-    transition: all 0.75s cubic-bezier(0, .95, .26, 1);
+    transition: all 1.0s cubic-bezier(0, .95, .26, 1);
 }
 
 
 
 nav {
-    background: #1506414d;
+    background: hsla(291, 29%, 9%, 0.705);
     position: fixed;
+    mix-blend-mode: hard-light;
     top: 0;
+    height:80px;
     left: 0;
     min-height: 50px;
     width: calc(100% - 20px);
@@ -144,6 +148,7 @@ nav {
     margin:10px;
     backdrop-filter: blur(10px);
     border-radius: 10px;
+    box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.514);
 
 }
 nav-list {
@@ -174,6 +179,7 @@ nav-item:hover {
     padding: 20px 60px;
     border-radius: 5px;
     font-weight: 900;
+    box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.514);
 
 }
 
@@ -187,7 +193,7 @@ nav-item:hover {
 
 hero-container {
     background: rgb(179,31,165);
-    background: linear-gradient(338deg, rgba(179,31,165,1) 0%, rgba(5,159,204,1) 100%);
+    background: linear-gradient(338deg, hsl(340, 98%, 68%) 0%, rgb(133, 32, 103) 100%);
     background-size: cover;
     background-position: center;
     /*background: linear-gradient(338deg, rgb(11, 4, 51) 0%, rgb(44, 13, 131) 100%);*/
@@ -234,7 +240,7 @@ h2 {
 .woop:hover {
 
     letter-spacing: 1rem;
-    transition: letter-spacing 0.5s cubic-bezier(0, .95, .26, 1), font-weight 2s cubic-bezier(0, .95, .26, 1);
+    transition: letter-spacing 0.5s cubic-bezier(0, .95, .26, 1), font-weight 0.5s cubic-bezier(0, .95, .26, 1);
     font-weight: 400;
 }
 
