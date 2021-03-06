@@ -5,18 +5,61 @@
 }
 
 
-html {
+
+:root {
+    --body-color: black;
+    --bg-color: white;
+
+    --bg-gradient: linear-gradient(338deg, hsl(340, 100%, 82%) 0%, #b9ff99 100%);
+    --nav-mobile-bg-gradient: linear-gradient(338deg, hsl(44, 100%, 90%) 0%, rgb(201, 255, 239) 100%);
+    --nav-shadow-color: rgba(0, 0, 0, 0.514);
+
+    --nav-button-color: black;
+    --nav-button-border-color: rgba(255, 255, 255, 0);
+    --nav-button-bg-color: rgba(157, 140, 255, 0);
+
+    --nav-button-hover-color: #070717;
+    --nav-button-hover-border-color: rgb(157, 140, 255);
+    --nav-button-hover-bg-color: aliceblue;
+
+    --nav-button-active-color: #070717;
+    --nav-button-active-border-color: rgb(186, 175, 255);
+    --nav-button-active-bg-color: aliceblue;
+
+    --nav-border-color: black;
+
+    --contact-button-color: black;
+    --contact-button-border-color: black;
+    --contact-button-bg-color: rgba(240, 248, 255, 0);
+
+    --contact-button-hover-color: black;
+    --contact-button-hover-shadow-color: rgba(0, 0, 0, 0.514);
+    --contact-button-hover-border-color: aliceblue;
+    --contact-button-hover-bg-color: aliceblue;
+
+    --contact-button-active-color: aliceblue;
+    --contact-button-active-border-color: black;
+    --contact-button-active-bg-color: black;
+
+    --expand-dong-color: black;
+
+    --nav-item-shadow-color: rgba(0, 0, 0, 0.514);
+    --contact-button-shadow-color: rgba(0, 0, 0, 0.514);
+
+    --button-recess-color: rgba(0, 0, 0, 0.514);
+    --box-recess-color: rgba(0, 0, 0, 0.514);
+    --box-border-color: rgba(0, 0, 0, 0.514);
+  }
+
+
+  html {
     font-family: 'Rubik', sans-serif;
-    background: #070717;
-    color: #fff;
+    background: var(--bg-color);
+    color: var(--body-color);
     user-select: none;
     height: 100%;
     width: 100%;
 }
-
-
-
-
 
 @media (max-width: 767px) {
     .woop {
@@ -41,13 +84,11 @@ html {
     nav-list>a:not(.current) {
         display: none;
         transition: all 0.75s cubic-bezier(0, .95, .26, 1);
-        color: rgba(255, 255, 255, 0);
 
     }
 
     nav-list.active>a:not(.current) {
         display: inline;
-        color: rgba(255, 255, 255, 1);
 
     }
 
@@ -55,8 +96,8 @@ html {
         transition: all 0.75s cubic-bezier(0, .95, .26, 1);
         height: 10%;
         width: calc(100% - 26px) !important;
-        background: linear-gradient(338deg, hsl(44, 100%, 90%) 0%, rgb(201, 255, 239) 100%) !important;
-        border: #000000 3px solid;
+        background:  var(--nav-mobile-bg-gradient)!important;
+        border: var(--nav-border-color) 3px solid;
     }
 
     nav.active {
@@ -67,7 +108,6 @@ html {
     hero>h1 {
         font-size: 80px;
         white-space: nowrap;
-        color: rgb(0, 0, 0);
     }
 
     .container {
@@ -76,30 +116,32 @@ html {
 
     .container.box {
 
-        box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.514) inset;
-        border: black 1px solid;
+        box-shadow: 0px 10px 30px -10px var(--box-recess-color) inset;
+        border: --box-border-color 1px solid;
         padding: 1em;
         border-radius: 3px;
+        color:var(--nav-button-color)
     }
 
     nav-item:hover {
-        background-color: aliceblue;
-        color: #070717;
+        background-color: var(--nav-button-hover-bg-color);
+        color: var(--nav-button-hover-color);
         padding: 20px 60px;
         border-radius: 5px;
         font-weight: 900;
         transition: all 0.5s cubic-bezier(0, .95, .26, 1);
-        border: aliceblue solid 1px;
+        border: var(--nav-button-hover-border-color) solid 1px;
 
     }
 
     nav-item:active {
-        background-color: aliceblue;
-        color: #070717;
+        background-color: var(--nav-button-active-bg-color);
+        color: var(--nav-button-active-color);
         padding: 20px 60px;
         border-radius: 5px;
+        border: var(--nav-button-active-border-color) solid 1px;
         font-weight: 900;
-        box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.514) inset;
+        box-shadow: 0px 10px 30px -10px var(--button-recess-color) inset;
         transition: all 0.5s cubic-bezier(0, .95, .26, 1);
 
     }
@@ -124,7 +166,6 @@ html {
 
     hero>h1 {
         font-size: 120px;
-        color: rgb(0, 0, 0);
         white-space: nowrap;
     }
 
@@ -168,7 +209,7 @@ body {
     padding: 10px;
     height: 20px;
     width: 20px;
-    color: rgb(0, 0, 0);
+    color: var(--expand-dong-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,7 +238,7 @@ nav {
     left: 0;
     min-height: 50px;
     width: calc(100% - 20px);
-    color: rgb(0, 0, 0);
+    color: var(--nav-button-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,7 +246,7 @@ nav {
     white-space: nowrap;
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.514);
+    box-shadow: 0px 10px 30px -10px var(--nav-shadow-color);
     transition: all 1.0s cubic-bezier(0, .95, .26, 1);
 
 }
@@ -223,36 +264,37 @@ nav-list {
 
 nav-item {
     height: 100%;
-    color: rgb(0, 0, 0);
+    color: var(--nav-button-color);
+    background-color: var(--nav-button-bg-color);
     display: flex;
     padding: 20px;
     justify-content: center;
     align-items: center;
     transition: all 0.5s cubic-bezier(0, .95, .26, 1);
-    border: rgba(255, 255, 255, 0) solid 1px;
+    border: var(--nav-button-border-color) solid 1px;
 
 }
 
 nav-item:hover {
-    background-color: aliceblue;
+    background-color: var(--nav-button-hover-bg-color);
     color: #070717;
     padding: 20px 60px;
     border-radius: 5px;
     font-weight: 900;
     transition: all 0.5s cubic-bezier(0, .95, .26, 1);
-    border: rgb(157, 140, 255) solid 1px;
+    border: var(--nav-button-hover-border-color) solid 1px;
 
 }
 
 nav-item:active {
-    background-color: aliceblue;
+    background-color: var(--nav-button-active-bg-color);
     color: #070717;
     padding: 20px 60px;
     border-radius: 5px;
     font-weight: 900;
-    box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.514) inset;
+    box-shadow: 0px 10px 30px -10px var(--nav-item-shadow-color);
     transition: all 0.5s cubic-bezier(0, .95, .26, 1);
-    border: rgb(186, 175, 255) solid 1px;
+    border: var(--nav-button-active-border-color) solid 1px;
 
 }
 
@@ -266,16 +308,14 @@ nav-item:active {
 }
 
 hero-container {
-    background: rgb(179, 31, 165);
-    background: linear-gradient(338deg, hsl(340, 100%, 82%) 0%, #b9ff99 100%);
+    background: var(--bg-gradient);
     background-size: cover;
     background-position: center;
-    /*background: linear-gradient(338deg, rgb(11, 4, 51) 0%, rgb(44, 13, 131) 100%);*/
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    color: rgb(0, 0, 0);
+    color: var(--body-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,35 +325,39 @@ hero-container {
 }
 
 a {
-    color: black;
+    color: var(--body-color);
     text-decoration: none;
 }
 
 contactbutton {
-    display:flexbox;
-    border: black 1px solid;
-    padding: 1em;
+    display:inline;
+    background-color: var(--contact-button-bg-color);
+    border: var(--contact-button-border-color) 1px solid;
+    padding: 0.5em 1em;
     border-radius: 3px;
     margin: 0.2em;
     user-select: none;
     -webkit-user-drag: none;
-    transition: all 0.5s cubic-bezier(.67, .27, .31, .86);
+    color: var(--contact-button-color);
+    transition: all 0.25s cubic-bezier(.67, .27, .31, .86);
 }
 
 contactbutton:hover {
-    border: aliceblue 1px solid;
+    border: var(--contact-button-hover-border-color) 1px solid;
     border-radius: 5px;
     margin: 0.2em;
-    background: white;
-    box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.514);
+    background: var(--contact-button-hover-bg-color);
+    color: var(--contact-button-hover-color);
+    transform: translateY(-6px);
+    box-shadow: 0px 10px 30px -10px var(--contact-button-shadow-color);
 }
 
 contactbutton:active {
-    border: black 1px solid;
+    border: var(--contact-button-active-border-color) 1px solid;
     border-radius: 7px;
     margin: 0.2em;
-    color: aliceblue;
-    background: black;
+    color: var(--contact-button-active-color);
+    background: var(--contact-button-active-bg-color);
 
 }
 
