@@ -7,19 +7,20 @@
 
 
 :root {
-    --body-color: black;
-    --bg-color: white;
+    --body-color: rgb(255, 255, 255);
+    --bg-color: rgb(0, 0, 0);
 
-    --bg-gradient: linear-gradient(338deg, hsl(340, 100%, 82%) 0%, #b9ff99 100%);
-    --nav-mobile-bg-gradient: linear-gradient(338deg, hsl(44, 100%, 90%) 0%, rgb(201, 255, 239) 100%);
+    --bg-gradient: linear-gradient(338deg, #1F4E6C 0%, #020715 100%);
+    --nav-mobile-bg-gradient: linear-gradient(185deg, hsl(320, 100%, 85%) 0%,hsl(17, 100%, 83%) 20%,hsl(44, 100%, 87%) 40%,hsl(97, 100%, 94%) 60%,hsl(165, 100%, 91%) 80%, rgb(184, 229, 255) 100%);;
+    --nav-desktop-bg: linear-gradient(185deg, hsl(320, 100%, 72%) 0%,hsl(17, 100%, 71%) 20%,hsl(44, 100%, 76%) 40%,hsl(98, 100%, 90%) 60%,hsl(165, 100%, 78%) 80%, rgb(35, 149, 214) 100%);
     --nav-shadow-color: rgba(0, 0, 0, 0.514);
 
-    --nav-button-color: black;
+    --nav-button-color: rgb(0, 0, 0);
     --nav-button-border-color: rgba(255, 255, 255, 0);
     --nav-button-bg-color: rgba(157, 140, 255, 0);
 
     --nav-button-hover-color: #070717;
-    --nav-button-hover-border-color: rgb(157, 140, 255);
+    --nav-button-hover-border-color: rgb(72, 228, 255);
     --nav-button-hover-bg-color: aliceblue;
 
     --nav-button-active-color: #070717;
@@ -28,18 +29,18 @@
 
     --nav-border-color: black;
 
-    --contact-button-color: black;
-    --contact-button-border-color: black;
+    --contact-button-color: aliceblue;
+    --contact-button-border-color: rgb(255, 240, 240);
     --contact-button-bg-color: rgba(240, 248, 255, 0);
 
     --contact-button-hover-color: black;
     --contact-button-hover-shadow-color: rgba(0, 0, 0, 0.514);
-    --contact-button-hover-border-color: aliceblue;
+    --contact-button-hover-border-color: rgb(71, 203, 255);
     --contact-button-hover-bg-color: aliceblue;
 
     --contact-button-active-color: aliceblue;
-    --contact-button-active-border-color: black;
-    --contact-button-active-bg-color: black;
+    --contact-button-active-border-color: rgb(85, 178, 255);
+    --contact-button-active-bg-color: rgb(85, 164, 255);
 
     --expand-dong-color: black;
 
@@ -47,8 +48,8 @@
     --contact-button-shadow-color: rgba(0, 0, 0, 0.514);
 
     --button-recess-color: rgba(0, 0, 0, 0.514);
-    --box-recess-color: rgba(0, 0, 0, 0.514);
-    --box-border-color: rgba(0, 0, 0, 0.514);
+    --box-recess-color: rgba(255, 255, 255, 0.514);
+    --box-border-color: rgba(255, 255, 255, 0.514);
   }
 
 
@@ -59,6 +60,7 @@
     user-select: none;
     height: 100%;
     width: 100%;
+
 }
 
 @media (max-width: 767px) {
@@ -117,10 +119,10 @@
     .container.box {
 
         box-shadow: 0px 10px 30px -10px var(--box-recess-color) inset;
-        border: --box-border-color 1px solid;
+        border: var(--box-border-color) 1px solid !important;
         padding: 1em;
         border-radius: 3px;
-        color:var(--nav-button-color)
+        color:var(--var(--body-color))
     }
 
     nav-item:hover {
@@ -154,6 +156,7 @@
         display: block !important;
         text-align: center;
         white-space: normal;
+        padding: 0.25em 1em !important;
     }
 }
 
@@ -229,7 +232,7 @@ body {
 
 
 nav {
-    background: hsla(54, 100%, 87%, 0.705);
+    background: var(--nav-desktop-bg);
     position: fixed;
     /*mix-blend-mode: hard-light;
     backdrop-filter: blur(10px);*/
@@ -292,7 +295,7 @@ nav-item:active {
     padding: 20px 60px;
     border-radius: 5px;
     font-weight: 900;
-    box-shadow: 0px 10px 30px -10px var(--nav-item-shadow-color);
+    box-shadow: 0px 10px 30px -10px var(--nav-item-shadow-color) inset;
     transition: all 0.5s cubic-bezier(0, .95, .26, 1);
     border: var(--nav-button-active-border-color) solid 1px;
 
@@ -333,7 +336,7 @@ contactbutton {
     display:inline;
     background-color: var(--contact-button-bg-color);
     border: var(--contact-button-border-color) 1px solid;
-    padding: 0.5em 1em;
+    padding: 1em;
     border-radius: 3px;
     margin: 0.2em;
     user-select: none;
@@ -372,7 +375,7 @@ hero {
     text-align: center;
     align-items: center;
     background: rgba(0, 0, 0, 0);
-    transition: all 1.5s cubic-bezier(0, .95, .26, 1);
+    transition: transform 1.5s cubic-bezier(0, .95, .26, 1);
 
 }
 
