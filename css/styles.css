@@ -7,45 +7,60 @@
 
 
 :root {
+    --shadow:#1A1B417F;
+    --text:#1A1B41;
+    --body:#ffffff;
+    --body-accent:#4CC9F0;
+    --hover:#FF518E;
+    --active:#9e697c;
+    --hover-text:#FFE66D;
+    --active-text:#fff5c3;
+    --transparent:#ffe66d00;
+
+
+
     --body-color: rgb(255, 255, 255);
-    --bg-color: rgb(0, 0, 0);
+    --bg-color: #5465FF;
+    --bg-grid: 50px 50px;
+    --bg-gradient: 
+      linear-gradient(0deg,transparent 47%, rgba(255, 255, 255, 0.05) 47%,rgba(255, 255, 255, 0.05) 53%,transparent 53%),
+      linear-gradient(90deg,transparent 47%,   rgba(255, 255, 255, 0.05) 47%,rgba(255, 255, 255, 0.05) 53%,transparent 53%);/*linear-gradient(338deg, #5465FF 0%, #8b97ff 100%);*/
+    --nav-mobile-bg-gradient: #ffe66d;/*linear-gradient(185deg, hsl(320, 100%, 85%) 0%,hsl(17, 100%, 83%) 20%,hsl(44, 100%, 87%) 40%,hsl(97, 100%, 94%) 60%,hsl(165, 100%, 91%) 80%, rgb(184, 229, 255) 100%)*/;
+    --nav-desktop-bg: #ffe66d;/*linear-gradient(185deg, hsl(320, 100%, 72%) 0%,hsl(17, 100%, 71%) 20%,hsl(44, 100%, 76%) 40%,hsl(98, 100%, 90%) 60%,hsl(165, 100%, 78%) 80%, rgb(35, 149, 214) 100%);*/
+    --nav-shadow-color: var(--hover-text);
 
-    --bg-gradient: linear-gradient(338deg, #1F4E6C 0%, #020715 100%);
-    --nav-mobile-bg-gradient: linear-gradient(185deg, hsl(320, 100%, 85%) 0%,hsl(17, 100%, 83%) 20%,hsl(44, 100%, 87%) 40%,hsl(97, 100%, 94%) 60%,hsl(165, 100%, 91%) 80%, rgb(184, 229, 255) 100%);;
-    --nav-desktop-bg: linear-gradient(185deg, hsl(320, 100%, 72%) 0%,hsl(17, 100%, 71%) 20%,hsl(44, 100%, 76%) 40%,hsl(98, 100%, 90%) 60%,hsl(165, 100%, 78%) 80%, rgb(35, 149, 214) 100%);
-    --nav-shadow-color: rgba(0, 0, 0, 0.514);
-
-    --nav-button-color: rgb(0, 0, 0);
-    --nav-button-border-color: rgba(255, 255, 255, 0);
+    --nav-button-color: var(--text);
+    --nav-button-border-color: var(--transparent);
     --nav-button-bg-color: rgba(157, 140, 255, 0);
 
-    --nav-button-hover-color: #070717;
-    --nav-button-hover-border-color: rgb(72, 228, 255);
-    --nav-button-hover-bg-color: aliceblue;
+    --nav-button-hover-color: var(--hover-text);
+    --nav-button-hover-border-color: var(--hover);
+    --nav-button-hover-bg-color: var(--hover);
 
-    --nav-button-active-color: #070717;
-    --nav-button-active-border-color: rgb(186, 175, 255);
-    --nav-button-active-bg-color: aliceblue;
+    --nav-button-active-color:  var(--active-text);
+    --nav-button-active-border-color: ar(--active);
+    --nav-button-active-bg-color: var(--active);
 
-    --nav-border-color: black;
+    --nav-border-color: #FFE66D;
 
-    --contact-button-color: aliceblue;
-    --contact-button-border-color: rgb(255, 240, 240);
-    --contact-button-bg-color: rgba(240, 248, 255, 0);
+    --contact-button-color: var(--body);
+    --contact-button-border-color: var(--body);
+    --contact-button-bg-color: var(--transparent);
 
-    --contact-button-hover-color: black;
-    --contact-button-hover-shadow-color: rgba(0, 0, 0, 0.514);
-    --contact-button-hover-border-color: rgb(71, 203, 255);
-    --contact-button-hover-bg-color: aliceblue;
+    --contact-button-hover-color: #1A1B41;
+    --contact-button-hover-shadow-color: var(--hover-text);
+    --contact-button-hover-border-color: var(--hover-text);
+    --contact-button-hover-bg-color: var(--hover-text);
 
     --contact-button-active-color: aliceblue;
-    --contact-button-active-border-color: rgb(85, 178, 255);
-    --contact-button-active-bg-color: rgb(85, 164, 255);
+    --contact-button-active-border-color: var(--hover);
+    --contact-button-active-bg-color: var(--hover);
 
-    --expand-dong-color: black;
+    --expand-dong-color: #1A1B41;
 
     --nav-item-shadow-color: rgba(0, 0, 0, 0.514);
-    --contact-button-shadow-color: rgba(0, 0, 0, 0.514);
+    --contact-button-shadow-color: var(--hover-text);
+    --contact-button-shadow-active-color: var(--hover);
 
     --button-recess-color: rgba(0, 0, 0, 0.514);
     --box-recess-color: rgba(255, 255, 255, 0.514);
@@ -118,7 +133,7 @@
 
     .container.box {
 
-        box-shadow: 0px 10px 30px -10px var(--box-recess-color) inset;
+        box-shadow: 0px 10px 30px -10px var(--box-recess-color);
         border: var(--box-border-color) 1px solid !important;
         padding: 1em;
         border-radius: 3px;
@@ -280,7 +295,7 @@ nav-item {
 
 nav-item:hover {
     background-color: var(--nav-button-hover-bg-color);
-    color: #070717;
+    color: var(--nav-button-hover-color);
     padding: 20px 60px;
     border-radius: 5px;
     font-weight: 900;
@@ -291,7 +306,7 @@ nav-item:hover {
 
 nav-item:active {
     background-color: var(--nav-button-active-bg-color);
-    color: #070717;
+    color: var(--nav-button-active-color);
     padding: 20px 60px;
     border-radius: 5px;
     font-weight: 900;
@@ -311,6 +326,7 @@ nav-item:active {
 }
 
 hero-container {
+    background-size:  var(--bg-grid)!important;
     background: var(--bg-gradient);
     background-size: cover;
     background-position: center;
@@ -352,7 +368,7 @@ contactbutton:hover {
     background: var(--contact-button-hover-bg-color);
     color: var(--contact-button-hover-color);
     transform: translateY(-6px);
-    box-shadow: 0px 10px 30px -10px var(--contact-button-shadow-color);
+    box-shadow: 0px 10px 20px -5px var(--contact-button-shadow-color);
 }
 
 contactbutton:active {
@@ -361,6 +377,7 @@ contactbutton:active {
     margin: 0.2em;
     color: var(--contact-button-active-color);
     background: var(--contact-button-active-bg-color);
+    box-shadow: 0px 10px 20px -5px var(--contact-button-shadow-active-color);
 
 }
 
