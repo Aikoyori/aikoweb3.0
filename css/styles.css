@@ -202,8 +202,10 @@
     }
     hero-container
     {
+        top: 1em!important;
         
         align-items: center;
+        
     }
     .container{
     margin-top: 150px;
