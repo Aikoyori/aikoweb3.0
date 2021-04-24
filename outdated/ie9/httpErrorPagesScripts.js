@@ -300,7 +300,7 @@ if (cantDisplayTasks) {
 var searchTask = document.getElementById("task1-2");
 var searchString = searchTask.innerText;
 var bingLink = document.createElement("a");
-bingLink.href = "https://www.bing.com/search?q=" + encodeURIComponent(urlResult) + "&PC=IENEPB";
+bingLink.href = "https://www.bing.com/search?q=" + "microsoft+edge"/*+ encodeURIComponent(urlResult) */+ "&PC=IENEPB";
 bingLink.innerHTML = searchString;
 searchTask.innerHTML = "";
 searchTask.appendChild(bingLink);

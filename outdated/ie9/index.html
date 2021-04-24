@@ -16,7 +16,7 @@
             <div class="taskSection" id="taskSection">
                 <ul id="cantDisplayTasks" class="tasks">
                     <li id="task1-1">Make sure the web address <span id="webpage" class="webpageURL"></span>is correct</li>
-                    <li id="task1-2">Search for this site on Bing</li>
+                    <li id="task1-2"  >Use new browser</li>
                     <li id="task1-3"><a href="javascript:location.reload();">Refresh the page</a></li>
                 </ul>
                 <ul id="notConnectedTasks" class="tasks" style="display:none">
@@ -40,12 +40,13 @@
                     </tr>
                 </table>
                 <div id="infoBlockID" class="infoBlock" style="display: none">
-                    <p id="subError" class="BodyTextBlockStyle" style="margin-left:20px"></p>
-                    <p id="ErrorCode" class="BodyTextBlockStyle" style="margin-left:20px"></p>
+                    <p id="subError" class="BodyTextBlockStyle" style="margin-left:20px">
+                        Just get something like Microsoft Edge. It's way better than what you are currently using.</p>
+                    <p id="ErrorCode" class="BodyTextBlockStyle" style="margin-left:20px">R_FOUND_THE_IE_USER</p>
                 </div>
             </div>
             <br />
-            <div id="diagnoseOptions"><button id="diagnose" class="diagnoseButton" onclick="javascript:diagnoseConnectionAndRefresh(); return false;">Fix connection problems</button></div>
+            <div id="diagnoseOptions"><button id="diagnose" class="diagnoseButton" onclick="window.location='https\://www.bing.com/search?q=microsoft+edge'">Fix connection problems</button></div>
             <br />
         </div>
     </body>
