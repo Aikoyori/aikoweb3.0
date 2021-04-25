@@ -16,8 +16,8 @@
             <div class="taskSection" id="taskSection">
                 <ul id="cantDisplayTasks" class="tasks">
                     <li id="task1-1">Make sure the web address <span id="webpage" class="webpageURL"></span>is correct</li>
-                    <li id="task1-2"  >Use new browser</li>
-                    <li id="task1-3"><a href="javascript:location.reload();">Refresh the page</a></li>
+                    <li id="task1-2">Search for this site on Bing</li>
+                    <li id="task1-3"><a id="task1-3-1" onclick="window.location='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">Refresh the page</a></li>
                 </ul>
                 <ul id="notConnectedTasks" class="tasks" style="display:none">
                     <li id="task2-1">Check that all network cables are plugged in.</li>
@@ -41,8 +41,8 @@
                 </table>
                 <div id="infoBlockID" class="infoBlock" style="display: none">
                     <p id="subError" class="BodyTextBlockStyle" style="margin-left:20px">
-                        Just get something like Microsoft Edge. It's way better than what you are currently using.</p>
-                    <p id="ErrorCode" class="BodyTextBlockStyle" style="margin-left:20px">R_FOUND_THE_IE_USER</p>
+                        <b><span id="certReason" style="margin-left: 20px;">Your browser had reached its end of life. We recommend you upgrading your browser for better security and to receive support.</span></b>
+                    <p id="ErrorCode" class="BodyTextBlockStyle" style="margin-left:20px">Error Code: DLG_FLAGS_SEC_BROWSER_DEPRECATED</p>
                 </div>
             </div>
             <br />
