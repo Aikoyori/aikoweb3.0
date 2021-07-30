@@ -184,7 +184,12 @@
         
         align-items: stretch;
     }
+
     contactscontainer {
+        line-height: 1cm;
+    }
+
+    stuffscontainer {
         line-height: 1cm;
     }
 
@@ -471,3 +476,12 @@ spacefix {
 paragraphcontainer{
     font-size: 1.5em;
 }
+
+stuffsep{
+    margin-bottom:2em;
+}
+
+stuffsep a{
+    font-weight: 700;
+}
+
