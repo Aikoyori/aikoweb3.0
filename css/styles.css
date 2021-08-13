@@ -1,15 +1,14 @@
-@font-face {
-    font-family: 'Rubik';
-    src: url('/fonts/rubik.ttf') format('truetype');
-    font-weight: 1 999;
-}
-@font-face {
-    font-family: 'Quicksand';
-    src: url('/fonts/quicksand.ttf') format('truetype');
-    font-weight: 1 999;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800&display=swap');
 
+html {
+    font-family:'Lexend', sans-serif;
+    background: var(--bg-color);
+    color: var(--body-color);
+    user-select: none;
+    height: 100%;
+    width: 100%;
 
+}
 
 :root {
 
@@ -97,15 +96,6 @@
   }
 
 
-  html {
-    font-family:'Quicksand', 'Rubik', sans-serif;
-    background: var(--bg-color);
-    color: var(--body-color);
-    user-select: none;
-    height: 100%;
-    width: 100%;
-
-}
 @media only screen and (orientation: portrait) {
     .woop {
         /*transform: rotate(90deg);*/
