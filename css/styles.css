@@ -16,16 +16,16 @@
 
 
     
-    --bg: #5465FF;
+    --bg: #2E2E3A;
     --text:#1A1B41;
     --body:#ffffff;
-    --body-accent:#4CC9F0;
-    --hover:#FF518E;
-    --active:#9e697c;
+    --hover:#4FA7A0;
+    --active:#297373;
+    --hover-text:#75DBCD;
+    
     --highlight:aliceblue;
 
-    --hover-text:#FFE66D;
-    --active-text:#fff5c3;
+    --active-text:aliceblue;
 
 
 
@@ -44,9 +44,10 @@
 
     --bg-color: var(--bg);
 
+    /*--body-accent:#75DBCD;*/
 
     --bg-grid: 50px 50px;
-    
+
     --button-bg: var(--hover-text);
 
 
@@ -61,7 +62,7 @@
     --nav-button-border-color: var(--transparent);
     --nav-button-bg-color:  var(--init-button-hover-color);
 
-    --nav-button-hover-color: var(--hover-text);
+    --nav-button-hover-color: var(#F4CBC6);
     --nav-button-hover-border-color: var(--hover);
     --nav-button-hover-bg-color: var(--hover);
 
