@@ -16,7 +16,7 @@
 
 
     
-    --shadow:#1A1B417F;
+    --bg: #5465FF;
     --text:#1A1B41;
     --body:#ffffff;
     --body-accent:#4CC9F0;
@@ -26,25 +26,30 @@
 
     --hover-text:#FFE66D;
     --active-text:#fff5c3;
+
+
+
     --transparent:#ffe66d00;
-    --bg: #5465FF;
-    --button-bg: #ffe66d;
+
+    --shadow:#1A1B417F;
+
+    --body-color: rgb(255, 255, 255);
 
     --init-button-hover-color:rgba(157, 140, 255, 0);
 
     --dark-shadow:rgba(0, 0, 0, 0.514);
     --recess:rgba(255, 255, 255, 0.514);
 
-    --body-color: rgb(255, 255, 255);
 
 
     --bg-color: var(--bg);
 
 
     --bg-grid: 50px 50px;
-
-
     
+    --button-bg: var(--hover-text);
+
+
     --bg-gradient: 
       linear-gradient(0deg,transparent 47%, rgba(255, 255, 255, 0.05) 47%,rgba(255, 255, 255, 0.05) 53%,transparent 53%),
       linear-gradient(90deg,transparent 47%,   rgba(255, 255, 255, 0.05) 47%,rgba(255, 255, 255, 0.05) 53%,transparent 53%);/*linear-gradient(338deg, #5465FF 0%, #8b97ff 100%);*/
