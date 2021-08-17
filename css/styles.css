@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800&display=swap');
 
+@font-face {
+    font-family: 'Lexend';
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/lexend.ttf') format('ttf');
+}
 html {
     font-family:'Lexend', sans-serif;
     background: var(--bg-color);
