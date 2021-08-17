@@ -1,10 +1,10 @@
 
 @font-face {
-    font-family: 'Lexend';
-    font-weight: 400;
-    font-display: swap;
-    src: url('/fonts/lexend.ttf') format('ttf');
+    font-family: 'Lexend';    
+    font-weight: 1 999;
+    src: url('/fonts/lexend.ttf') format('truetype');
 }
+
 html {
     font-family:'Lexend', sans-serif;
     background: var(--bg-color);
