@@ -205,12 +205,21 @@ html {
         align-items: stretch;
     }
 
+    content-container
+    {
+        display:block;
+        align-items: stretch;
+    }
+
     contactscontainer {
         line-height: 1cm;
     }
 
     stuffscontainer {
         line-height: 1cm;
+    }
+    stuffscontainer>h1 {
+        line-height: 1.5cm;
     }
 
     contactbutton {
@@ -283,6 +292,10 @@ body {
 a.link{
     border-bottom: var(--body-color) 1px solid;
 }
+a.link.source{
+    border-bottom: var(--body-color) 1px solid;
+    font-size:0.5em;
+}
 .navlink {
     text-decoration: none;
     margin: 20px;
@@ -349,6 +362,11 @@ nav-list {
     white-space: nowrap;
 
 
+}
+lol-container
+{
+    height:calc(100vh - 160px);
+    display:flex;
 }
 
 
@@ -431,7 +449,17 @@ contactbutton {
     color: var(--contact-button-color);
     transition: all 0.25s cubic-bezier(.67, .27, .31, .86);
 }
-
+contactbutton>svg.audius
+{
+    fill:var(--contact-button-color);
+    transition: all 0.25s cubic-bezier(.67, .27, .31, .86);
+    width:24px;
+    height:24px;
+}
+contactbutton:hover>svg.audius
+{
+    fill:var(--contact-button-hover-color);
+}
 contactbutton:hover {
     border: var(--contact-button-hover-border-color) 1px solid;
     border-radius: 5px;
