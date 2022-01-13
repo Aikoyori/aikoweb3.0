@@ -20,12 +20,12 @@ html {
 
 
     
-    --bg: #2E2E3A;
+    --bg: #3a2e36;
     --text:#1A1B41;
-    --body:#ffffff;
-    --hover:#4FA7A0;
-    --active:#297373;
-    --hover-text:#75DBCD;
+    --body:#ffe7f5;
+    --hover:#ff2b4e;
+    --active:#c92b40;
+    --hover-text:#ff6673;
     
     --highlight:aliceblue;
 
@@ -37,7 +37,7 @@ html {
 
     --shadow:#1A1B417F;
 
-    --body-color: rgb(255, 255, 255);
+    --body-color: rgb(255, 225, 231);
 
     --init-button-hover-color:rgba(157, 140, 255, 0);
 
