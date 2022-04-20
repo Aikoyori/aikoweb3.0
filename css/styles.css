@@ -228,6 +228,11 @@ html {
         white-space: normal;
         padding: 0.25em 1em !important;
     }
+    banner{
+        
+    top: 20px;
+    font-size:1em;
+    }
 }
 
 @media only screen and (orientation: landscape) {
@@ -236,6 +241,11 @@ html {
         display: none !important;
     }
 
+    banner{
+        
+    font-size:1.5em;
+        bottom: 20px;
+    }
     nav{
         
         top: 0;
@@ -334,6 +344,7 @@ a.link.source{
 
 nav {
     background: var(--nav-desktop-bg);
+    color: var(--nav-button-color);
     position: fixed;
     /*mix-blend-mode: hard-light;
     backdrop-filter: blur(10px);*/
@@ -341,7 +352,6 @@ nav {
     left: 0;
     min-height: 50px;
     width: calc(100% - 20px);
-    color: var(--nav-button-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -533,3 +543,31 @@ stuffsep a{
     font-weight: 700;
 }
 
+banner{
+    position:absolute;
+    left:20px;
+    display:block;
+    width: calc(100% - 100px);
+    border-radius: 10px;
+    padding: 30px;
+    background: #a389895d;
+    box-shadow: 0px 10px 30px -10px #a389895d;
+    text-align: center;
+}
+banner a{
+    transition: color,background 0.5s ease;
+    padding:10px 10px;
+    background: #ffffff;
+    color: #6e4646;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px -10px #2e26269d;
+    
+    /*text-decoration:underline;*/
+    
+}
+
+banner a:hover{
+    
+    background: #ff6262;
+    color: #1d1919;
+}
