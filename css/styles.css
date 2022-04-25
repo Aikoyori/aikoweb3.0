@@ -229,22 +229,37 @@ html {
         padding: 0.25em 1em !important;
     }
     banner{
-        
-    top: 20px;
-    font-size:1em;
+        top: 20px;
+        font-size:1em;
+        /*line-height: 2em;*/
     }
-}
+    body > banner > toppart{
+        color:#fff;
+    }   
 
+}
+/*
+
+AMONG US
+
+
+*/
 @media only screen and (orientation: landscape) {
 
     .hamburgerBTN {
         display: none !important;
     }
-
+    showonmobile
+    {
+        display: none;
+    }
     banner{
         
     font-size:1.5em;
         bottom: 20px;
+            
+    text-shadow: #fff 0px 2px 0px,#fff 2px 0px 0px,#fff 0px -2px 0px,#fff -2px 0px  0px,
+    #fff 2px 2px 0px,#fff 2px -2px 0px,#fff -2px -2px 0px,#fff -2px 2px  0px;
     }
     nav{
         
@@ -550,24 +565,44 @@ banner{
     width: calc(100% - 100px);
     border-radius: 10px;
     padding: 30px;
-    background: #a389895d;
-    box-shadow: 0px 10px 30px -10px #a389895d;
+    color: #1A1B41;
+
+    background: linear-gradient(180deg, hsla(211, 100%, 36%, 1) 50%, hsla(51, 100%, 50%, 1) 50%);
+    background-size: contain;
+    box-shadow: 0px 10px 30px -10px rgba(255, 217, 0, 0.5);
     text-align: center;
+    filter: grayscale(0.5);
+    transition: filter 0.5s cubic-bezier(.17,.67,.1,1);
 }
-banner a{
-    transition: color,background 0.5s ease;
+
+banner:hover{
+    
+    filter: grayscale(0);
+}
+body > banner > a{
+    transition: color 0.5s cubic-bezier(.17,.67,.1,1),
+    padding 0.25s cubic-bezier(.17,.67,.1,1),
+    background-color 0.5s cubic-bezier(.17,.67,.1,1),
+    font-weight 0.5s cubic-bezier(.17,.67,.1,1);
+    text-shadow: none;
     padding:10px 10px;
-    background: #ffffff;
+    background-color: #ffffffe3;
     color: #6e4646;
     border-radius: 10px;
-    box-shadow: 0px 10px 30px -10px #2e26269d;
+    box-shadow: 0px 10px 30px -20px hsla(211, 100%, 36%, 1);
+    background-blend-mode: hard-light;
+    border:2px hsla(211, 100%, 36%, 1) solid;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     
     /*text-decoration:underline;*/
     
 }
 
-banner a:hover{
+body > banner > a:hover{
     
-    background: #ff6262;
-    color: #1d1919;
+    padding:15px 50px;
+    font-weight: 800;
+    color: rgb(0, 89, 184);
+    background-color: rgb(255, 217, 0);
 }
