@@ -234,7 +234,7 @@ html {
         /*line-height: 2em;*/
     }
     body > banner > toppart{
-        color:#fff;
+        color:hsla(51, 100%, 50%, 1);
     }   
 
 }
@@ -258,8 +258,15 @@ AMONG US
     font-size:1.5em;
         bottom: 20px;
             
-    text-shadow: #fff 0px 2px 0px,#fff 2px 0px 0px,#fff 0px -2px 0px,#fff -2px 0px  0px,
-    #fff 2px 2px 0px,#fff 2px -2px 0px,#fff -2px -2px 0px,#fff -2px 2px  0px;
+    text-shadow: 
+    hsla(51, 100%, 50%, 1) 0px 2px 0px,
+    hsla(51, 100%, 50%, 1) 2px 0px 0px,
+    hsla(51, 100%, 50%, 1) 0px -2px 0px,
+    hsla(51, 100%, 50%, 1) -2px 0px  0px,
+    hsla(51, 100%, 50%, 1) 2px 2px 0px,
+    hsla(51, 100%, 50%, 1) 2px -2px 0px,
+    hsla(51, 100%, 50%, 1) -2px -2px 0px,
+    hsla(51, 100%, 50%, 1) -2px 2px  0px;
     }
     nav{
         
@@ -559,50 +566,78 @@ stuffsep a{
 }
 
 banner{
+    transition: color 0.5s cubic-bezier(.17,.67,.1,1),
+    padding 0.25s cubic-bezier(.17,.67,.1,1),
+    background-color 0.5s cubic-bezier(.17,.67,.1,1),
+    filter 0.5s cubic-bezier(.17,.67,.1,1),
+    border 0.5s cubic-bezier(.17,.67,.1,1),
+    transform 0.25s cubic-bezier(.17,.67,.1,1),
+    box-shadow 0.25s cubic-bezier(.17,.67,.1,1),
+    font-weight 0.5s cubic-bezier(.17,.67,.1,1);
     position:absolute;
-    left:20px;
+    font-weight: 900;
+    left:19px;
     display:block;
-    width: calc(100% - 100px);
-    border-radius: 10px;
-    padding: 30px;
-    color: #1A1B41;
-
+    width: calc(100% - 106px);
+    border-radius: 20px;
     background: linear-gradient(180deg, hsla(211, 100%, 36%, 1) 50%, hsla(51, 100%, 50%, 1) 50%);
+    padding: 30px;
+    color: hsla(211, 100%, 36%, 1);
+    box-shadow: 0px 7px 0px 0px hsla(211, 100%, 36%, 1);
+
     background-size: contain;
-    box-shadow: 0px 10px 30px -10px rgba(255, 217, 0, 0.5);
+    border:3px hsla(211, 100%, 36%, 1) solid;
     text-align: center;
-    filter: grayscale(0.5);
-    transition: filter 0.5s cubic-bezier(.17,.67,.1,1);
+    filter:  saturate(0.9);
 }
 
 banner:hover{
     
-    filter: grayscale(0);
+    filter: saturate(1);
+    transform:translateY(-7px);
+    box-shadow: 0px 14px 0px 0px hsla(211, 100%, 36%, 1);
 }
-body > banner > a{
+banner:active{
+    
+    transform:translateY(3px);
+    border:3px hsla(51, 100%, 50%, 1) solid;
+    box-shadow: 0px 4px 0px 0px hsla(211, 100%, 36%, 1);
+}
+banner > a{
     transition: color 0.5s cubic-bezier(.17,.67,.1,1),
     padding 0.25s cubic-bezier(.17,.67,.1,1),
     background-color 0.5s cubic-bezier(.17,.67,.1,1),
+    filter 0.5s cubic-bezier(.17,.67,.1,1),
+    transform 0.25s cubic-bezier(.17,.67,.1,1),
+    box-shadow 0.25s cubic-bezier(.17,.67,.1,1),
     font-weight 0.5s cubic-bezier(.17,.67,.1,1);
     text-shadow: none;
     padding:10px 10px;
-    background-color: #ffffffe3;
-    color: #6e4646;
     border-radius: 10px;
-    box-shadow: 0px 10px 30px -20px hsla(211, 100%, 36%, 1);
     background-blend-mode: hard-light;
+    background-color: rgb(255, 217, 0);
     border:2px hsla(211, 100%, 36%, 1) solid;
+    color: rgb(0, 89, 184);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    
+    display: inline-flex;
+    transform:translateY(-2px);
+    box-shadow: 0px 7px 0px 0px hsla(211, 100%, 36%, 1);
     /*text-decoration:underline;*/
     
 }
 
-body > banner > a:hover{
+banner > a:hover{
     
-    padding:15px 50px;
+    background-color: hsla(211, 100%, 36%, 1);
+    color: rgb(255, 217, 0);
+    border:2px rgb(255, 217, 0) solid;
+    padding:10px 50px;
     font-weight: 800;
-    color: rgb(0, 89, 184);
-    background-color: rgb(255, 217, 0);
+}
+
+banner > a:active{
+    transform:translateY(3px);
+    box-shadow: 0px 2px 0px 0px hsla(211, 100%, 36%, 1);
+    /*transform: scaleX(-1) rotateY(180deg);*/
 }
