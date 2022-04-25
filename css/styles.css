@@ -233,7 +233,7 @@ html {
         font-size:1em;
         /*line-height: 2em;*/
     }
-    body > banner > toppart{
+    banner > toppart{
         color:hsla(51, 100%, 50%, 1);
     }   
 
