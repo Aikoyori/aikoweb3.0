@@ -563,6 +563,7 @@ paragraphcontainer{
 
 stuffsep{
     margin-bottom:2em;
+    /*border-bottom: var(--body-color) 2px solid;*/
 }
 
 stuffsep a{
