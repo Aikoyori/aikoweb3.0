@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="Aikoyori • HOME">
+    <meta property="og:site_name" content="Aikoyori's Website">
+    <meta property="og:url" content="https://aikoyori.xyz">
+    <meta property="og:description"
+        content="It's me! Aikoyori. If you happen to see this, thanks for sharing the site and thanks for looking :D">
+    <meta property="og:type" content="website">    
+    <meta name="theme-color" content="#5465ff" />
+    <title>Aikoyori • HOME</title>
+</head>
+
+<body>
+    <div id="hamburg" draggable="false" class="navlink hamburgerBTN" href="#">+</div>
+    <nav id="navbar">
+        <nav-list class="list" id="navlist">
+            <a draggable="false" class="navlink current" href="/">
+                <nav-item> HOME </nav-item>
+            </a>
+            <a draggable="false" class="navlink" href="/about">
+                <nav-item> ABOUT ME </nav-item>
+            </a>
+            <a draggable="false" class="navlink" href="/portfolio">
+                <nav-item> STUFF MADE BY ME </nav-item>
+            </a>
+            <a draggable="false" class="navlink" href="/links">
+                <nav-item> LINKS </nav-item>
+            </a>
+        </nav-list>
+    </nav>
+    <hero-container>
+        <centerbold class="flicker"> 
+            <hideonmobile>
+                <jumbo style="margin-right:2vw;">404</jumbo> <jumbo>N</jumbo>ot  <jumbo>F</jumbo>ound 
+            </hideonmobile>
+            <showonmobile>
+                <jumbo style="margin-right:2vw;">404</jumbo>
+            </showonmobile>
+            
+        </centerbold>
+        <linkhome>
+            <a href="/" >Return Home</a>
+        </linkhome>
+    </hero-container>
+    <spacefix></spacefix>
+    <!--<banner><b>Hey!</b> I have a wiki right <a href="https://wiki.aikoyori.xyz/">here!</a></banner>-->
+</body>
+<script>
+    document.getElementById("hamburg").addEventListener("click", () => {
+        document.getElementById("navlist").classList.toggle("active");
+        document.getElementById("navbar").classList.toggle("active");
+        document.getElementById("hamburg").classList.toggle("active");
+    })
+</script>
+
+</html>

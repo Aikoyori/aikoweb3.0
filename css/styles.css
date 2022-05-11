@@ -237,6 +237,10 @@ html {
         color:hsla(51, 100%, 50%, 1);
     }   
 
+    hideonmobile
+    {
+        display: none;
+    }
 }
 /*
 
@@ -640,4 +644,64 @@ banner > a:active{
     transform:translateY(3px);
     box-shadow: 0px 2px 0px 0px hsla(211, 100%, 36%, 1);
     /*transform: scaleX(-1) rotateY(180deg);*/
+}
+
+jumbo{
+    font-size: 4em;
+}
+large{
+    font-size: 2em;
+}
+
+centerbold
+{
+    position: absolute;
+    margin:auto;
+    display: block;
+    transform: rotate(7deg);
+    top:40vh;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.flicker
+{
+    animation: flicker 1.75s,wiggle 4s cubic-bezier(.7,0,.3,1);
+    animation-iteration-count: infinite;
+}
+@keyframes flicker {
+        
+    0% { opacity:   0.5;}
+    20% { opacity:  0.75;}
+    30% { opacity:  0.65;}
+    50% { opacity:  0.24;}
+    70% { opacity:  0.75;}
+    80% { opacity:  0.3;}
+    100% { opacity: 0.5;}
+}
+@keyframes wiggle {
+        
+    0% { transform: rotate(7deg);}
+    50% { transform: rotate(-7deg);}
+    100% { transform: rotate(7deg);}
+}
+
+linkhome
+{
+    font-size: 2em;
+    font-variant: small-caps;
+    position: absolute;
+    top:60vh;
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+linkhome>a
+{
+    transition: all 0.5s ease;
+    font-weight: 400;
+}
+linkhome>a:hover
+{
+    color:#ff2b4e;
+    font-weight: 800;
 }
