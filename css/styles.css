@@ -692,7 +692,7 @@ linkhome
     font-size: 2em;
     font-variant: small-caps;
     position: absolute;
-    top:60vh;
+    bottom:20vh;
     text-decoration: underline;
     transition: all 0.5s ease;
 }
